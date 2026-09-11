@@ -105,11 +105,11 @@ export default function Home() {
   const [formData, setFormData] = useState({ nome: '', modalidade: '' });
   const [enviado, setEnviado] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setEnviado(true);
-    setTimeout(() => setEnviado(false), 5000);
-  };
+  const handleSubmit = (e: any) => {
+  e.preventDefault();
+  setEnviado(true);
+  setTimeout(() => setEnviado(false), 5000);
+};
 
   return (
     <div className="min-h-screen bg-neutral-950 text-slate-100 font-sans">
