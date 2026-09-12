@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Atlética Furiosa",
-  description: "Portal oficial da Atlética Furiosa",
-  icons: {
-    icon: "/logo/logo.jpg?v=2",
-  },
+  title: "A.A.A Furiosa",
+  description: "Portal Oficial da Atlética Furiosa",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="pt-BR" style={{ colorScheme: 'dark' }}>
-      <body className="bg-[#0a0a0a] text-slate-100">
+      <head>
+        <meta name="color-scheme" content="dark" />
+        <style dangerouslySetInnerHTML={{ __html: `
+          html, body {
+            background-color: #0a0a0a !important;
+            color: #f8fafc !important;
+            color-scheme: dark !important;
+          }
+        `}} />
+      </head>
+      <body className="bg-[#0a0a0a] text-slate-100 antialiased m-0">
         {children}
       </body>
     </html>
-  )
+  );
 }
