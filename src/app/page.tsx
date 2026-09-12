@@ -410,7 +410,7 @@ export default function Home() {
 </section>
 
       {/* FORMULÁRIO QUERO JOGAR PELA ATLÉTICA */}
-<div className="max-w-xl mx-auto px-4 py-8">
+<div id="treinos" className="max-w-xl mx-auto px-4 py-8">
   <div className="text-center mb-6">
     <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-wide">Quero Jogar pela Atlética</h2>
     <p className="text-slate-400 text-sm mt-1">Quer treinar e representar a Atlética Furiosa nas modalidades esportivas?</p>
