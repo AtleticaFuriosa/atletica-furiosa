@@ -15,7 +15,7 @@ const PRODUTOS = [
   {
     id: 1,
     nome: "Caneca de 600ml",
-    preco: "R$ 40,00",
+    preco: "R$ 30,00",
     descricao: "Caneca de alumínio oficial da Atlética Furiosa.",
     foto: "/produtos/caneca.jpg",
     link: "https://wa.me/5588993262966?text=Ol%C3%A1!%20Quero%20comprar%20a%20Caneca%20de%20600ml",
