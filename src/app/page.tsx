@@ -102,67 +102,63 @@ const DIRETORIA = [
    ========================================================================== */
 
 export default function Home() {
-  const [formData, setFormData] = useState({ nome: '', modalidade: '' });
-  const [enviado, setEnviado] = useState(false);
-
-  const handleSubmit = (e: any) => {
-  e.preventDefault();
-  setEnviado(true);
-  setTimeout(() => setEnviado(false), 5000);
-};
-
   return (
-    <div className="min-h-screen bg-neutral-950 text-slate-100 font-sans">
+    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#f8fafc', fontFamily: 'sans-serif', margin: 0, padding: 0 }}>
       
-      {/* MENU SUPERIOR / HEADER COM LOGO */}
-      <header className="border-b border-red-900/50 bg-neutral-900/90 sticky top-0 backdrop-blur z-50">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      {/* CABEÇALHO / HEADER ÚNICO */}
+      <header style={{ borderBottom: '1px solid rgba(127, 29, 29, 0.5)', backgroundColor: 'rgba(10, 10, 10, 0.95)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(8px)' }}>
+        <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '12px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
           
           {/* LOGO + NOME */}
-          <div className="flex items-center gap-3">
-            {/* Coloque a imagem do logo na pasta public com o nome logo.png */}
-            <img 
-              src="/logo/logo.jpg" 
-              alt="Logo Atlética Furiosa" 
-              className="h-30 w-auto object-contain"
-              onError={(e) => { e.currentTarget.style.display = 'none'; }} 
-            />
-            <span className="font-black text-lg tracking-wide text-amber-400 uppercase">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+            <img src="/logo/logo.jpg" alt="Logo Atlética Furiosa" style={{ height: '36px', width: 'auto', objectFit: 'contain' }} />
+            <span style={{ fontWeight: 900, fontSize: '14px', letterSpacing: '0.05em', color: '#fbbf24', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
               A.A.A Furiosa
             </span>
           </div>
 
-          <nav className="hidden lg:flex gap-6 text-xs font-semibold uppercase tracking-wider items-center">
-  <a href="#eventos" className="hover:text-amber-400 transition">Eventos</a>
-  <a href="#produtos" className="hover:text-amber-400 transition">Produtos</a>
-  <a href="#sobre" className="hover:text-amber-400 transition">Sobre</a>
-  <a href="#diretoria" className="hover:text-amber-400 transition">Diretoria</a>
-  <a href="#inscricao" className="hover:text-amber-400 transition">Treinos</a>
-</nav>
+          {/* MENU COM ROLAGEM HORIZONTAL PARA CELULAR */}
+          <div style={{ overflowX: 'auto', whiteSpace: 'nowrap', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none', maxWidth: '55vw' }}>
+            <nav style={{ display: 'inline-flex', gap: '16px', fontSize: '12px', fontWeight: 600, textTransform: 'uppercase', padding: '4px 0' }}>
+              <a href="#eventos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Eventos</a>
+              <a href="#produtos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Produtos</a>
+              <a href="#sobre" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Sobre</a>
+              <a href="#diretoria" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Diretoria</a>
+              <a href="#treinos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Treinos</a>
+            </nav>
+          </div>
 
-          <a 
-            href="https://forms.gle/Ki6XuTn6CVo1GgmM8" 
-            target="_blank" 
-            rel="noreferrer"
-            className="bg-amber-400 text-neutral-950 px-4 py-2 rounded-lg font-extrabold text-xs uppercase hover:bg-amber-500 transition"
-          >
-            Inscrição Interlegis
-          </a>
+          {/* BOTÃO DE INSCRIÇÃO CORRETO (SEM INTERLEGIS) */}
+          <div style={{ flexShrink: 0 }}>
+            <a
+              href="https://forms.gle/Ki6XuTn6O5yAuvn3A"
+              target="_blank"
+              rel="noreferrer"
+              style={{ backgroundColor: '#fbbf24', color: '#0a0a0a', fontWeight: 'bold', padding: '6px 12px', borderRadius: '6px', fontSize: '12px', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap', display: 'inline-block' }}
+            >
+              Inscrição
+            </a>
+          </div>
+
         </div>
       </header>
 
-      {/* CABEÇALHO / HERO */}
-      <section className="max-w-6xl mx-auto px-4 py-16 text-center border-b border-red-900/30">
-        <span className="bg-red-950/80 text-amber-400 border border-red-800 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+      {/* CONTEÚDO HERO */}
+      <section style={{ maxWidth: '1152px', margin: '0 auto', padding: '64px 16px', textAlign: 'center' }}>
+        <span style={{ backgroundColor: 'rgba(251, 191, 36, 0.1)', border: '1px solid #fbbf24', borderRadius: '9999px', padding: '6px 16px', fontSize: '11px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#fbbf24', display: 'inline-block', marginBottom: '16px' }}>
           Portal Oficial • Atlética Furiosa
         </span>
-        <h1 className="text-4xl md:text-6xl font-black mt-6 mb-4 text-slate-100 uppercase tracking-tight">
+        <h1 style={{ fontSize: '2.2rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px', lineHeight: 1.2 }}>
           Movidos pela fúria, guiados pela vitória.
         </h1>
-        <p className="text-slate-400 max-w-2xl mx-auto text-base md:text-lg mb-8">
+        <p style={{ color: '#a3a3a3', maxWidth: '600px', margin: '0 auto', fontSize: '0.95rem' }}>
           Venha conferir nossos eventos, adquira nossos produtos oficiais e participe dos nossos times.
         </p>
       </section>
+
+    </div>
+  );
+}
 
       {/* BLOCO DESTAQUE: IV INTERLEGIS */}
       <section id="eventos" className="max-w-6xl mx-auto px-4 py-12">
