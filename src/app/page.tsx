@@ -114,7 +114,7 @@ export default function Home() {
   <img
     src="/logo.jpg"
     alt="Logo A.A.A FURIOSA"
-    style={{ width: '48px', height: '48px', objectFit: 'contain' }}
+    style={{ width: '52px', height: '52px', objectFit: 'contain' }}
   />
   <span style={{ fontWeight: 900, fontSize: '14px', letterSpacing: '0.05em', color: '#fbbf24', textTransform: 'uppercase' }}>
     A.A.A Furiosa
