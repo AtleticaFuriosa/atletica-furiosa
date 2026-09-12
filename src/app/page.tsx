@@ -279,11 +279,93 @@ export default function Home() {
   </div>
 </section>
 
-      {/* QUEM SOMOS */}
-      <section id="sobre" className="max-w-6xl mx-auto px-4 py-16 border-b border-red-900/30">
-        <h2 className="text-3xl font-black mb-4 text-slate-100 uppercase">Sobre A Atlética Furiosa</h2>
-        <p className="text-slate-300 leading-relaxed">{SOBRE_ATLETICA.historia}</p>
-      </section>
+      {/* SEÇÃO SOBRE A HISTÓRIA E EVENTOS */}
+<section id="diretoria" className="py-16 px-4 max-w-6xl mx-auto">
+  <div className="text-center mb-12 max-w-3xl mx-auto space-y-4">
+    <span className="bg-amber-400 text-neutral-950 font-black text-xs px-3 py-1 rounded uppercase tracking-wider">
+      Nossa História & Trajetória
+    </span>
+    <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-wide">
+      Sobre a Atlética Furiosa
+    </h2>
+    <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+      Nascida no dia <strong className="text-amber-400">27/05/2022</strong> e idealizada com muito carinho por ex-alunos apaixonados do curso de Direito da URCA, a Atlética Furiosa surgiu para unir o esporte, a amizade e a energia que move a nossa galera. Mais do que competir, nós criamos memórias inesquecíveis!
+    </p>
+    <p className="text-slate-400 text-sm">
+      Ao longo dessa jornada, já marcamos presença e agitamos os maiores campeonatos e eventos da região:
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    {/* Evento 1: JOIA */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/joia.jpg" alt="JOIA" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">JOIA</h3>
+        <p className="text-slate-300 text-sm mt-2">Competição esportiva de peso onde a Furiosa mostra toda a garra em quadra.</p>
+      </div>
+    </div>
+
+    {/* Evento 2: Interlegis */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/interlegis.jpg" alt="Interlegis" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">Interlegis</h3>
+        <p className="text-slate-300 text-sm mt-2">Tradição de integração e disputas épicas entre os cursos.</p>
+      </div>
+    </div>
+
+    {/* Evento 3: Corrida URCA */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/urca.jpg" alt="Corrida URCA" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">Corrida URCA</h3>
+        <p className="text-slate-300 text-sm mt-2">Velocidade, resistência e o atletismo da Furiosa marcando presença.</p>
+      </div>
+    </div>
+
+    {/* Evento 4: Calouradas */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/calourada.jpg" alt="Calouradas" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">Calouradas</h3>
+        <p className="text-slate-300 text-sm mt-2">A recepção inesquecível dos novos calouros com muito som e integração.</p>
+      </div>
+    </div>
+
+    {/* Evento 5: INTERCARIRI */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/intercariri.jpg" alt="INTERCARIRI" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">INTERCARIRI</h3>
+        <p className="text-slate-300 text-sm mt-2">O grande encontro esportivo da região do Cariri reunindo as melhores atléticas.</p>
+      </div>
+    </div>
+
+    {/* Evento 6: JUCS */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/jucs.jpg" alt="JUCS" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">JUCS</h3>
+        <p className="text-slate-300 text-sm mt-2">Jogos Universitários de destaque com alto nível competitivo.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* DIRETORIA */}
 <section id="diretoria" className="max-w-6xl mx-auto px-4 py-16 border-b border-red-900/30">
