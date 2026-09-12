@@ -129,17 +129,6 @@ export default function Home() {
   <a href="#treinos" style={{ color: '#fbbf24', textDecoration: 'none' }}>Treinos</a>
 </nav>
 
-          <div>
-            <a
-              href="https://forms.gle/Ki6XuTn6O5yAuvn3A"
-              target="_blank"
-              rel="noreferrer"
-              style={{ backgroundColor: '#fbbf24', color: '#0a0a0a', fontWeight: 'bold', padding: '6px 12px', borderRadius: '6px', fontSize: '11px', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
-            >
-              Inscrição
-            </a>
-          </div>
-
         </div>
       </header>
 
