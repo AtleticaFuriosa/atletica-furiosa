@@ -103,38 +103,32 @@ const DIRETORIA = [
 
 export default function Home() {
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#f8fafc', fontFamily: 'sans-serif', margin: 0, padding: 0 }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#f8fafc', fontFamily: 'sans-serif', margin: 0, padding: 0, overflowX: 'hidden' }}>
       
-      {/* CABEÇALHO / HEADER ÚNICO */}
-      <header style={{ borderBottom: '1px solid rgba(127, 29, 29, 0.5)', backgroundColor: 'rgba(10, 10, 10, 0.95)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(8px)' }}>
-        <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '12px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+      {/* CABEÇALHO */}
+      <header style={{ borderBottom: '1px solid rgba(127, 29, 29, 0.5)', backgroundColor: 'rgba(10, 10, 10, 0.95)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(8px)', width: '100%' }}>
+        <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '10px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
           
-          {/* LOGO + NOME */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
-            <img src="/logo/logo.jpg" alt="Logo Atlética Furiosa" style={{ height: '36px', width: 'auto', objectFit: 'contain' }} />
-            <span style={{ fontWeight: 900, fontSize: '14px', letterSpacing: '0.05em', color: '#fbbf24', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontWeight: 900, fontSize: '14px', letterSpacing: '0.05em', color: '#fbbf24', textTransform: 'uppercase' }}>
               A.A.A Furiosa
             </span>
           </div>
 
-          {/* MENU COM ROLAGEM HORIZONTAL PARA CELULAR */}
-          <div style={{ overflowX: 'auto', whiteSpace: 'nowrap', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none', maxWidth: '55vw' }}>
-            <nav style={{ display: 'inline-flex', gap: '16px', fontSize: '12px', fontWeight: 600, textTransform: 'uppercase', padding: '4px 0' }}>
-              <a href="#eventos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Eventos</a>
-              <a href="#produtos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Produtos</a>
-              <a href="#sobre" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Sobre</a>
-              <a href="#diretoria" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Diretoria</a>
-              <a href="#treinos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Treinos</a>
-            </nav>
-          </div>
+          <nav style={{ display: 'flex', gap: '16px', fontSize: '11px', fontWeight: 600, textTransform: 'uppercase', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <a href="#eventos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Eventos</a>
+            <a href="#produtos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Produtos</a>
+            <a href="#sobre" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Sobre</a>
+            <a href="#diretoria" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Diretoria</a>
+            <a href="#treinos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Treinos</a>
+          </nav>
 
-          {/* BOTÃO DE INSCRIÇÃO CORRETO (SEM INTERLEGIS) */}
-          <div style={{ flexShrink: 0 }}>
+          <div>
             <a
               href="https://forms.gle/Ki6XuTn6O5yAuvn3A"
               target="_blank"
               rel="noreferrer"
-              style={{ backgroundColor: '#fbbf24', color: '#0a0a0a', fontWeight: 'bold', padding: '6px 12px', borderRadius: '6px', fontSize: '12px', textTransform: 'uppercase', textDecoration: 'none', whiteSpace: 'nowrap', display: 'inline-block' }}
+              style={{ backgroundColor: '#fbbf24', color: '#0a0a0a', fontWeight: 'bold', padding: '6px 12px', borderRadius: '6px', fontSize: '11px', textTransform: 'uppercase', textDecoration: 'none', display: 'inline-block' }}
             >
               Inscrição
             </a>
@@ -143,9 +137,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* CONTEÚDO HERO */}
+      {/* CONTEÚDO */}
       <section style={{ maxWidth: '1152px', margin: '0 auto', padding: '64px 16px', textAlign: 'center' }}>
-        <span style={{ backgroundColor: 'rgba(251, 191, 36, 0.1)', border: '1px solid #fbbf24', borderRadius: '9999px', padding: '6px 16px', fontSize: '11px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#fbbf24', display: 'inline-block', marginBottom: '16px' }}>
+        <span style={{ backgroundColor: 'rgba(251, 191, 36, 0.1)', border: '1px solid #fbbf24', borderRadius: '9999px', padding: '4px 12px', fontSize: '10px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#fbbf24', display: 'inline-block', marginBottom: '16px' }}>
           Portal Oficial • Atlética Furiosa
         </span>
         <h1 style={{ fontSize: '2.2rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px', lineHeight: 1.2 }}>
