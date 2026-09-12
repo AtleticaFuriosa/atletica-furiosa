@@ -136,7 +136,6 @@ export default function Home() {
             <a href="#eventos" className="text-amber-400 hover:underline">Eventos</a>
             <a href="#produtos" className="hover:text-amber-400 transition">Produtos</a>
             <a href="#sobre" className="hover:text-amber-400 transition">Sobre</a>
-            <a href="#diretoria" className="hover:text-amber-400 transition">Diretoria</a>
             <a href="#inscricao" className="hover:text-amber-400 transition">Treinos</a>
           </nav>
 
@@ -292,13 +291,24 @@ export default function Home() {
       Nascida no dia <strong className="text-amber-400">27/05/2022</strong> e idealizada com muito carinho por ex-alunos apaixonados do curso de Direito da URCA, a Atlética Furiosa surgiu para unir o esporte, a amizade e a energia que move a nossa galera. Mais do que competir, nós criamos memórias inesquecíveis!
     </p>
     <p className="text-slate-400 text-sm">
-      Ao longo dessa jornada, já marcamos presença e agitamos os maiores campeonatos e eventos da região:
+      Ao longo dessa jornada, já realizamos e marcamos presença nos maiores campeonatos e eventos:
     </p>
   </div>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     
-    {/* Evento 1: JOIA */}
+    {/* Evento 1: Copa Furiosa */}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
+      <div className="h-48 bg-neutral-950 overflow-hidden relative">
+        <img src="/eventos/copa-furiosa.jpg" alt="Copa Furiosa" className="w-full h-full object-cover" />
+      </div>
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <h3 className="text-xl font-bold text-amber-400 uppercase">Copa Furiosa</h3>
+        <p className="text-slate-300 text-sm mt-2">O nosso campeonato próprio, reunindo a energia máxima da torcida e dos atletas em casa.</p>
+      </div>
+    </div>
+
+    {/* Evento 2: JOIA */}
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       <div className="h-48 bg-neutral-950 overflow-hidden relative">
         <img src="/eventos/joia.jpg" alt="JOIA" className="w-full h-full object-cover" />
@@ -309,7 +319,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Evento 2: Interlegis */}
+    {/* Evento 3: Interlegis */}
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       <div className="h-48 bg-neutral-950 overflow-hidden relative">
         <img src="/eventos/interlegis.jpg" alt="Interlegis" className="w-full h-full object-cover" />
@@ -320,7 +330,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Evento 3: Corrida URCA */}
+    {/* Evento 4: Corrida URCA */}
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       <div className="h-48 bg-neutral-950 overflow-hidden relative">
         <img src="/eventos/urca.jpg" alt="Corrida URCA" className="w-full h-full object-cover" />
@@ -331,7 +341,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Evento 4: Calouradas */}
+    {/* Evento 5: Calouradas */}
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       <div className="h-48 bg-neutral-950 overflow-hidden relative">
         <img src="/eventos/calourada.jpg" alt="Calouradas" className="w-full h-full object-cover" />
@@ -342,7 +352,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Evento 5: INTERCARIRI */}
+    {/* Evento 6: INTERCARIRI */}
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       <div className="h-48 bg-neutral-950 overflow-hidden relative">
         <img src="/eventos/intercariri.jpg" alt="INTERCARIRI" className="w-full h-full object-cover" />
@@ -353,7 +363,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Evento 6: JUCS */}
+    {/* Evento 7: JUCS */}
     <div className="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-lg flex flex-col">
       <div className="h-48 bg-neutral-950 overflow-hidden relative">
         <img src="/eventos/jucs.jpg" alt="JUCS" className="w-full h-full object-cover" />
