@@ -152,8 +152,6 @@ export default function Home() {
       </section>
 
     </div>
-  );
-}
 
       {/* BLOCO DESTAQUE: IV INTERLEGIS */}
       <section id="eventos" className="max-w-6xl mx-auto px-4 py-12">
