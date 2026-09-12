@@ -121,13 +121,13 @@ export default function Home() {
   </span>
 </div>
 
-          <nav style={{ display: 'flex', gap: '16px', fontSize: '11px', fontWeight: 600, textTransform: 'uppercase', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <a href="#eventos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Eventos</a>
-            <a href="#produtos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Produtos</a>
-            <a href="#sobre" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Sobre</a>
-            <a href="#diretoria" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Diretoria</a>
-            <a href="#treinos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Treinos</a>
-          </nav>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '24px', fontSize: '14px', fontWeight: 700, textTransform: 'uppercase', flexWrap: 'wrap' }}>
+  <a href="#eventos" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Eventos</a>
+  <a href="#produtos" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Produtos</a>
+  <a href="#sobre" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Sobre</a>
+  <a href="#diretoria" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Diretoria</a>
+  <a href="#treinos" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Treinos</a>
+</nav>
 
           <div>
             <a
