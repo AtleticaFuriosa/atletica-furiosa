@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Atlética Furiosa",
   description: "Portal oficial da Atlética Furiosa",
   icons: {
-    icon: "/logo.jpg",
+    icon: "/logo/logo.jpg",
   },
 };
 
