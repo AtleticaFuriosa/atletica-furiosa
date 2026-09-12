@@ -112,7 +112,7 @@ export default function Home() {
           
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
   <img
-    src="/logo.png"
+    src="/logo.jpg"
     alt="Logo A.A.A FURIOSA"
     style={{ width: '36px', height: '36px', objectFit: 'contain' }}
   />
