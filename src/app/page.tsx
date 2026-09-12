@@ -132,12 +132,13 @@ export default function Home() {
             </span>
           </div>
 
-          <nav className="hidden lg:flex gap-6 text-xs font-semibold uppercase tracking-wider text-slate-300">
-            <a href="#eventos" className="text-amber-400 hover:underline">Eventos</a>
-            <a href="#produtos" className="hover:text-amber-400 transition">Produtos</a>
-            <a href="#sobre" className="hover:text-amber-400 transition">Sobre</a>
-            <a href="#inscricao" className="hover:text-amber-400 transition">Treinos</a>
-          </nav>
+          <nav className="hidden lg:flex gap-6 text-xs font-semibold uppercase tracking-wider items-center">
+  <a href="#eventos" className="hover:text-amber-400 transition">Eventos</a>
+  <a href="#produtos" className="hover:text-amber-400 transition">Produtos</a>
+  <a href="#sobre" className="hover:text-amber-400 transition">Sobre</a>
+  <a href="#diretoria" className="hover:text-amber-400 transition">Diretoria</a>
+  <a href="#inscricao" className="hover:text-amber-400 transition">Treinos</a>
+</nav>
 
           <a 
             href="https://forms.gle/Ki6XuTn6CVo1GgmM8" 
