@@ -103,6 +103,7 @@ const DIRETORIA = [
 
 export default function Home() {
   return (
+    <div>
     <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#f8fafc', fontFamily: 'sans-serif', margin: 0, padding: 0, overflowX: 'hidden' }}>
       
       {/* CABEÇALHO */}
@@ -453,8 +454,10 @@ export default function Home() {
 </div>
 
       {/* RODAPÉ */}
-      <footer className="max-w-6xl mx-auto px-4 py-8 border-t border-red-900/30 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Atlética Furiosa • Todos os direitos reservados.
+      <footer className="max-w-6xl mx-auto px-4 py-8 border-t border-red-900/50">
+        <p className="text-center text-xs text-neutral-400">
+          © {new Date().getFullYear()} Atlética Furiosa • Todos os direitos reservados.
+        </p>
       </footer>
 
     </div>
