@@ -122,7 +122,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             {/* Coloque a imagem do logo na pasta public com o nome logo.png */}
             <img 
-              src="/logo.png" 
+              src="/logo/logo.jpg" 
               alt="Logo Atlética Furiosa" 
               className="h-30 w-auto object-contain"
               onError={(e) => { e.currentTarget.style.display = 'none'; }} 
