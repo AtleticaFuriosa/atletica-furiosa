@@ -149,13 +149,6 @@ export default function Home() {
 
       {/* BLOCO DESTAQUE: IV INTERLEGIS */}
 <section id="eventos" className="max-w-6xl mx-auto px-4 py-12">
-  
-  {/* Título da Seção */}
-  <div className="text-center mb-8">
-    <span className="inline-block bg-[#fbbf24] text-[#0a0a0a] font-black text-sm uppercase px-4 py-1.5 rounded-md tracking-wider">
-      Eventos
-    </span>
-  </div>
         <div className="bg-gradient-to-r from-red-950/90 via-neutral-900 to-neutral-900 p-8 rounded-2xl border border-amber-400/40 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
           
           <div className="space-y-4 max-w-2xl text-left">
