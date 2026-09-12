@@ -110,16 +110,16 @@ export default function Home() {
       <header style={{ borderBottom: '1px solid rgba(127, 29, 29, 0.5)', backgroundColor: 'rgba(10, 10, 10, 0.85)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', width: '100%' }}>
         <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '10px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px' }}>
           
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontWeight: 900, fontSize: '14px', letterSpacing: '0.05em', color: '#fbbf24', textTransform: 'uppercase' }}>
-              A.A.A Furiosa
-              <img
-  src="/logo/logo.png"
-  alt="Logo A.A.A FURIOSA"
-  style={{ width: '36px', height: '36px', objectFit: 'contain' }}
-/>
-            </span>
-          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+  <img
+    src="/logo.png"
+    alt="Logo A.A.A FURIOSA"
+    style={{ width: '36px', height: '36px', objectFit: 'contain' }}
+  />
+  <span style={{ fontWeight: 900, fontSize: '14px', letterSpacing: '0.05em', color: '#fbbf24', textTransform: 'uppercase' }}>
+    A.A.A Furiosa
+  </span>
+</div>
 
           <nav style={{ display: 'flex', gap: '16px', fontSize: '11px', fontWeight: 600, textTransform: 'uppercase', flexWrap: 'wrap', justifyContent: 'center' }}>
             <a href="#eventos" style={{ color: '#d4d4d4', textDecoration: 'none' }}>Eventos</a>
