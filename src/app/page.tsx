@@ -104,7 +104,7 @@ const DIRETORIA = [
 export default function Home() {
   return (
     <div>
-    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#f8fafc', paddingBottom: '40px' }}>
+    <div style={{ minHeight: 'auto', backgroundColor: '#0a0a0a', color: '#f8fafc', paddingBottom: '40px' }}>
       
       {/* CABEÇALHO */}
       <header style={{ borderBottom: '1px solid rgba(127, 29, 29, 0.5)', backgroundColor: 'rgba(10, 10, 10, 0.85)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', width: '100%' }}>
