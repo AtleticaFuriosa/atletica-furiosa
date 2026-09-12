@@ -322,41 +322,52 @@ export default function Home() {
   </p>
 </section>
 
-      {/* INTERESSE EM TREINOS */}
-      <section id="inscricao" className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-black mb-2 text-slate-100 uppercase">Quero Jogar pela Atlética</h2>
-        <p className="text-slate-400 mb-6">Quer treinar e representar a Atlética Furiosa nas modalidades esportivas?</p>
+      {/* FORMULÁRIO QUERO JOGAR PELA ATLÉTICA */}
+<div className="max-w-xl mx-auto px-4 py-8">
+  <div className="text-center mb-6">
+    <h2 className="text-2xl md:text-3xl font-black text-white uppercase tracking-wide">Quero Jogar pela Atlética</h2>
+    <p className="text-slate-400 text-sm mt-1">Quer treinar e representar a Atlética Furiosa nas modalidades esportivas?</p>
+  </div>
 
-        <div className="bg-neutral-900 p-6 rounded-xl border border-red-900/50 max-w-xl">
-          {enviado ? (
-            <div className="bg-emerald-500/10 text-emerald-400 p-4 rounded text-center text-sm font-bold">
-              ✅ Dados enviados para a diretoria de esportes!
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input 
-                type="text" 
-                required 
-                placeholder="Seu Nome Completo" 
-                className="w-full bg-neutral-950 border border-red-900/50 rounded p-3 text-sm text-slate-200"
-                value={formData.nome}
-                onChange={(e) => setFormData({...formData, nome: e.target.value})}
-              />
-              <input 
-                type="text" 
-                required 
-                placeholder="Modalidade (Futsal, Vôlei, Handebol...)" 
-                className="w-full bg-neutral-950 border border-red-900/50 rounded p-3 text-sm text-slate-200"
-                value={formData.modalidade}
-                onChange={(e) => setFormData({...formData, modalidade: e.target.value})}
-              />
-              <button type="submit" className="w-full bg-amber-400 text-neutral-950 font-bold py-3 rounded uppercase text-sm hover:bg-amber-500 transition">
-                Enviar Interesse
-              </button>
-            </form>
-          )}
-        </div>
-      </section>
+  <form 
+    onSubmit={(e: any) => {
+      e.preventDefault();
+      const nome = e.currentTarget.elements.namedItem('nome')?.value || '';
+      const modalidade = e.currentTarget.elements.namedItem('modalidade')?.value || '';
+      
+      const numeroWhatsApp = "5588997222184"; 
+      
+      const mensagem = `Olá! Meu nome é *${nome}* e tenho interesse em jogar *${modalidade}* pela Atlética Furiosa!`;
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+      
+      window.open(url, '_blank');
+    }}
+    className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 shadow-lg space-y-4"
+  >
+    <input 
+      type="text" 
+      name="nome"
+      placeholder="Seu Nome Completo" 
+      required
+      className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 transition"
+    />
+    
+    <input 
+      type="text" 
+      name="modalidade"
+      placeholder="Modalidade (Futsal, Vôlei, Handebol...)" 
+      required
+      className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-400 transition"
+    />
+    
+    <button 
+      type="submit"
+      className="w-full bg-amber-400 text-neutral-950 font-black py-3 rounded-lg hover:bg-amber-300 transition uppercase tracking-wider"
+    >
+      Enviar Interesse
+    </button>
+  </form>
+</div>
 
       {/* RODAPÉ */}
       <footer className="max-w-6xl mx-auto px-4 py-8 border-t border-red-900/30 text-center text-xs text-slate-500">
