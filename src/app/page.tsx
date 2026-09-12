@@ -280,7 +280,7 @@ export default function Home() {
 </section>
 
       {/* SEÇÃO SOBRE A HISTÓRIA E EVENTOS */}
-<section id="diretoria" className="py-16 px-4 max-w-6xl mx-auto">
+<section id="sobre" className="py-16 px-4 max-w-6xl mx-auto">
   <div className="text-center mb-12 max-w-3xl mx-auto space-y-4">
     <span className="bg-amber-400 text-neutral-950 font-black text-xs px-3 py-1 rounded uppercase tracking-wider">
       Nossa História & Trajetória
