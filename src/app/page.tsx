@@ -104,7 +104,7 @@ const DIRETORIA = [
 export default function Home() {
   return (
     <div>
-    <div style={{ minHeight: 'auto', backgroundColor: '#0a0a0a', color: '#f8fafc', paddingBottom: '40px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#f8fafc', paddingBottom: '40px' }}>
       
       {/* CABEÇALHO */}
       <header style={{ borderBottom: '1px solid rgba(127, 29, 29, 0.5)', backgroundColor: 'rgba(10, 10, 10, 0.85)', position: 'sticky', top: 0, zIndex: 50, backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', width: '100%' }}>
@@ -121,12 +121,12 @@ export default function Home() {
   </span>
 </div>
 
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '24px', fontSize: '14px', fontWeight: 700, textTransform: 'uppercase', flexWrap: 'wrap' }}>
-  <a href="#eventos" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Eventos</a>
-  <a href="#produtos" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Produtos</a>
-  <a href="#sobre" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Sobre</a>
-  <a href="#diretoria" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Diretoria</a>
-  <a href="#treinos" style={{ color: '#fbbf24', textDecoration: 'none', opacity: 0.9 }}>Treinos</a>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: '4px', scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }} className="w-full md:w-auto">
+  <a href="#eventos" style={{ color: '#fbbf24', textDecoration: 'none' }}>Eventos</a>
+  <a href="#produtos" style={{ color: '#fbbf24', textDecoration: 'none' }}>Produtos</a>
+  <a href="#sobre" style={{ color: '#fbbf24', textDecoration: 'none' }}>Sobre</a>
+  <a href="#diretoria" style={{ color: '#fbbf24', textDecoration: 'none' }}>Diretoria</a>
+  <a href="#treinos" style={{ color: '#fbbf24', textDecoration: 'none' }}>Treinos</a>
 </nav>
 
           <div>
