@@ -165,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* BLOCO DESTAQUE: IV INTERLEGIS */}
-      <section id="interlegis" className="max-w-6xl mx-auto px-4 py-12">
+      <section id="eventos" className="max-w-6xl mx-auto px-4 py-12">
         <div className="bg-gradient-to-r from-red-950/90 via-neutral-900 to-neutral-900 p-8 rounded-2xl border border-amber-400/40 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
           
           <div className="space-y-4 max-w-2xl text-left">
@@ -195,6 +195,27 @@ export default function Home() {
               </span>
             </div>
           </div>
+
+       {/* CARD: ESQUENTA INTERLEGIS */}
+<div className="max-w-6xl mx-auto px-4 mt-6">
+  <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-lg">
+    <div className="space-y-2">
+      <span className="bg-amber-400 text-neutral-950 font-black text-[10px] px-2.5 py-1 rounded uppercase tracking-wider">
+        Esquenta Oficial 🍻
+      </span>
+      <h3 className="text-2xl md:text-3xl font-black text-white uppercase tracking-wide">
+        Esquenta Interlegis
+      </h3>
+      <p className="text-slate-300 text-sm md:text-base max-w-xl">
+        Um momento de descontração e integração para aquecer para os jogos!
+      </p>
+      <div className="flex flex-wrap gap-3 pt-2 text-xs font-bold text-amber-400">
+        <span className="bg-neutral-950 px-3 py-1.5 rounded border border-neutral-800">📅 Data: 19/09</span>
+        <span className="bg-neutral-950 px-3 py-1.5 rounded border border-neutral-800">📍 Local: Buba&apos;s Bar (Praça Siqueira Campos)</span>
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* BOTÃO DIRETO PARA O GOOGLE FORMS */}
           <div className="w-full lg:w-auto flex-shrink-0 text-center">
@@ -229,7 +250,6 @@ export default function Home() {
               className="w-full h-full object-cover relative z-0"
               onError={(e) => { e.currentTarget.style.display = 'none'; }}
             />
-            <span className="absolute">Sem Foto</span>
           </div>
 
           <div className="flex justify-between items-start mb-2 gap-2">
