@@ -15,11 +15,11 @@ const PRODUTOS = [
   {
     id: 1,
     nome: "Caneca de 600ml",
-    preco: "R$ 30,00",
+    preco: "R$ 35,00",
     descricao: "Caneca de alumínio oficial da Atlética Furiosa.",
     foto: "/produtos/caneca.jpg",
-    link: "https://wa.me/5588993262966?text=Ol%C3%A1!%20Quero%20comprar%20a%20Caneca%20de%20600ml",
-    isWhatsapp: true
+    link: "https://wa.me/5588996432842?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20a%20Caneca%20de%20600ml",
+    iswhatsapp: true
   },
   {
     id: 2,
@@ -27,11 +27,20 @@ const PRODUTOS = [
     preco: "R$ 15,00",
     descricao: "Tirante exclusivo personalizado da Atlética.",
     foto: "/produtos/tirante.jpg",
-    link: "https://wa.me/5588993262966?text=Ol%C3%A1!%20Quero%20comprar%20o%20Tirante",
-    isWhatsapp: true
+    link: "https://wa.me/5588996432842?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20o%20Tirante",
+    iswhatsapp: true
   },
   {
     id: 3,
+    nome: "Combo Caneca + Tirante",
+    preco: "R$ 45,00",
+    descricao: "Leve a caneca oficial junto com o tirante com desconto especial!",
+    foto: "/produtos/combo.jpg",
+    link: "https://wa.me/5588996432842?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20o%20Combo%20Caneca%20+%20Tirante",
+    iswhatsapp: true
+  },
+  {
+    id: 4,
     nome: "Camisa de Jogador",
     preco: "R$ 40,00",
     descricao: "Camisa oficial de jogo para nossos atletas.",
@@ -40,7 +49,7 @@ const PRODUTOS = [
     isWhatsapp: false
   },
   {
-    id: 4,
+    id: 5,
     nome: "Camisa Universitária",
     preco: "R$ 40,00",
     descricao: "Camisa estilo universitário para usar no dia a dia.",
@@ -49,7 +58,7 @@ const PRODUTOS = [
     isWhatsapp: false
   },
   {
-    id: 5,
+    id: 6,
     nome: "Camisa de Torcedor",
     preco: "R$ 40,00",
     descricao: "Vista o manto e venha apoiar a Furiosa na torcida!",
