@@ -226,10 +226,10 @@ export default function Home() {
       {/* Imagem da Logo do JOIA */}
       <div className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center relative">
         <img 
-          src="/logo-joia.png" 
-          alt="Logo JOIA 2026" 
-          className="max-h-full max-w-full object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)]"
-        />
+  src="/logo/logo-joia.png" 
+  alt="Logo JOIA 2026" 
+  className="max-h-full max-w-full object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)]"
+/>
       </div>
 
       {/* Botão com o link real do Forms */}
