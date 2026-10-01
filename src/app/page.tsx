@@ -18,7 +18,7 @@ const PRODUTOS = [
     preco: "R$ 35,00",
     descricao: "Caneca de alumínio oficial da Atlética Furiosa.",
     foto: "/produtos/caneca.jpg",
-    link: "https://wa.me/5588996432842?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20a%20Caneca%20de%20600ml",
+    link: "https://wa.me/5588993262966?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20a%20Caneca%20de%20600ml",
     iswhatsapp: true
   },
   {
@@ -27,7 +27,7 @@ const PRODUTOS = [
     preco: "R$ 15,00",
     descricao: "Tirante exclusivo personalizado da Atlética.",
     foto: "/produtos/tirante.jpg",
-    link: "https://wa.me/5588996432842?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20o%20Tirante",
+    link: "https://wa.me/5588993262966?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20o%20Tirante",
     iswhatsapp: true
   },
   {
@@ -36,7 +36,7 @@ const PRODUTOS = [
     preco: "R$ 45,00",
     descricao: "Leve a caneca oficial junto com o tirante com desconto especial!",
     foto: "/produtos/combo.jpg",
-    link: "https://wa.me/5588996432842?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20o%20Combo%20Caneca%20+%20Tirante",
+    link: "https://wa.me/5588993262966?text=Olá!%20Vim%20pelo%20site%20e%20quero%20comprar%20o%20Combo%20Caneca%20+%20Tirante",
     iswhatsapp: true
   },
   {
