@@ -166,88 +166,81 @@ export default function Home() {
   </div>
 
   {/* Card Principal JOIA */}
-  <div className="bg-gradient-to-r from-red-950/90 via-neutral-900 to-neutral-900 border border-amber-500/30 rounded-2xl p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center shadow-xl">
-    
-    {/* Coluna de Informações (Ocupa 2 colunas em telas grandes) */}
-    <div className="lg:col-span-2 space-y-4 text-left">
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="bg-amber-400 text-black text-xs font-black px-2.5 py-1 rounded uppercase tracking-wider">
-          Inscrições Abertas
-        </span>
-        <span className="text-xs text-neutral-400 font-semibold tracking-wider uppercase">
-          • Evento Oficial
-        </span>
-      </div>
-
-      <h3 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight">
-        JOIA 2026
-      </h3>
-      <p className="text-amber-400 font-bold text-lg">
-        Jogos Inter Atléticas da URCA
-      </p>
-
-      <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
-        A maior competição universitária da URCA está chegando! Estamos buscando atletas para defender o nosso manto.
-      </p>
-
-      {/* Lista de Modalidades */}
-      <div className="bg-neutral-950/60 border-l-4 border-amber-400 p-4 rounded-r-lg space-y-2">
-        <p className="text-xs font-bold text-amber-400 uppercase tracking-wider">
-          🏆 Buscamos atletas para:
-        </p>
-        <div className="flex flex-wrap gap-2 pt-1">
-          {[
-            "Futsal Fem",
-            "Basquete Fem & Masc",
-            "Handebol Fem",
-            "Vôlei Fem & Masc",
-            "Natação"
-          ].map((modalidade, idx) => (
-            <span key={idx} className="bg-neutral-800 text-neutral-200 text-xs font-medium px-2.5 py-1 rounded-full border border-neutral-700">
-              {modalidade}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Datas e Local */}
-      <div className="flex flex-wrap gap-3 pt-2 text-xs font-bold">
-        <span className="bg-red-950/80 text-amber-300 border border-amber-500/30 px-3 py-1.5 rounded-md flex items-center gap-1.5">
-          📅 13 a 27 de Novembro de 2026
-        </span>
-        <span className="bg-neutral-800 text-neutral-300 border border-neutral-700 px-3 py-1.5 rounded-md flex items-center gap-1.5">
-          📍 Crato - CE (Locais a definir)
-        </span>
-      </div>
-    </div>
-
-    {/* Coluna da Direita: Logo + Botão de Inscrição */}
-    <div className="flex flex-col items-center justify-center space-y-4 bg-neutral-950/40 p-6 rounded-xl border border-neutral-800">
-      {/* Imagem da Logo do JOIA */}
-      <div className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center relative">
-        <img 
-  src="/logo/logo-joia.png" 
-  alt="Logo JOIA 2026" 
-  className="max-h-full max-w-full object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)]"
-/>
-      </div>
-
-      {/* Botão com o link real do Forms */}
-      <a
-        href="https://forms.gle/pBzGRqTxELTX4xtW9"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full text-center bg-amber-400 hover:bg-amber-300 text-black font-black py-3.5 px-4 rounded-xl transition-all duration-200 shadow-lg shadow-amber-500/10 hover:scale-[1.02] active:scale-[0.98] text-sm uppercase tracking-wide"
-      >
-        ⚡ Demonstrar Interesse
-      </a>
-
-      <span className="text-[11px] text-neutral-500 text-center">
-        Formulário oficial de seletiva via Google Forms
+<div className="bg-gradient-to-r from-red-950/90 via-neutral-900 to-neutral-900 border border-amber-500/30 rounded-2xl p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+  
+  {/* Coluna de Informações (Ocupa 2 colunas em telas grandes) */}
+  <div className="lg:col-span-2 space-y-4 text-left">
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="bg-amber-400 text-black text-xs font-black px-2.5 py-1 rounded uppercase tracking-wider">
+        Inscrições Abertas
+      </span>
+      <span className="text-xs text-neutral-400 font-semibold tracking-wider uppercase">
+        • Evento Oficial
       </span>
     </div>
 
+    <h3 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight">
+      JOIA 2026
+    </h3>
+    <p className="text-amber-400 font-bold text-lg">
+      Jogos Inter Atléticas da URCA
+    </p>
+
+    <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
+      A maior competição universitária da URCA está chegando! Estamos buscando atletas para defender o nosso manto.
+    </p>
+
+    {/* Informações sobre Modalidades e Horas Complementares */}
+    <div className="bg-neutral-950/60 border-l-4 border-amber-400 p-4 rounded-r-lg space-y-2">
+      <p className="text-xs font-bold text-amber-400 uppercase tracking-wider">
+        🏆 Modalidades:
+      </p>
+      <p className="text-sm font-semibold text-neutral-200">
+        Conferir modalidades disponíveis no Forms
+      </p>
+    </div>
+
+    {/* Datas, Local e Destaque de Horas */}
+    <div className="flex flex-wrap gap-3 pt-2 text-xs font-bold">
+      <span className="bg-red-950/80 text-amber-300 border border-amber-500/30 px-3 py-1.5 rounded-md flex items-center">
+        📅 13 a 23 de Novembro de 2026
+      </span>
+      <span className="bg-neutral-800 text-neutral-300 border border-neutral-700 px-3 py-1.5 rounded-md flex items-center">
+        📍 Crato - CE (Locais a definir)
+      </span>
+      <span className="bg-amber-400/20 text-amber-300 border border-amber-400/40 px-3 py-1.5 rounded-md flex items-center">
+        🎓 Vale 60h complementares
+      </span>
+    </div>
   </div>
+
+  {/* Coluna da Direita: Logo + Botão de Inscrição */}
+  <div className="flex flex-col items-center justify-center space-y-4 bg-neutral-950/40 p-6 rounded-xl border border-neutral-800/80">
+    {/* Imagem da Logo do JOIA */}
+    <div className="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center relative">
+      <img
+        src="/logo/logo-joia.png"
+        alt="Logo JOIA 2026"
+        className="max-h-full max-w-full object-contain filter drop-shadow-[0_4px_12px_rgba(245,158,11,0.25)]"
+      />
+    </div>
+
+    {/* Botão com o link do Forms */}
+    <a
+      href="https://forms.gle/JJvNgQs7rnzVkSyF9"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full text-center bg-amber-400 hover:bg-amber-300 text-black font-black py-3 px-4 rounded-xl transition duration-200 uppercase text-sm tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-400/10"
+    >
+      ⚡ Se inscreva aqui
+    </a>
+
+    <span className="text-[11px] text-neutral-500 text-center">
+      Formulário oficial de seletiva via Google Forms
+    </span>
+  </div>
+
+</div>
 </section>
 
       {/* PRODUTOS OFICIAIS */}
