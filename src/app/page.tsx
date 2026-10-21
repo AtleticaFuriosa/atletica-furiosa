@@ -165,7 +165,7 @@ export default function Home() {
     </h2>
   </div>
 
-  {/* Card Principal JOIA */}
+ {/* Card Principal JOIA */}
 <div className="bg-gradient-to-r from-red-950/90 via-neutral-900 to-neutral-900 border border-amber-500/30 rounded-2xl p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
   
   {/* Coluna de Informações (Ocupa 2 colunas em telas grandes) */}
